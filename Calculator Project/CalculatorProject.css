@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,#00AAFF, #00FF6C);
+}
+
+#calculator-layout{
+    width: 40vw;
+    min-width: 100px;
+    height: 20vw;
+    min-height: 800px;
+    border: black;
+    margin-left: 30vw;
+}
+#Result-Screen{
+    margin-top: 70px;
+    background-color: rgba(0,0,0,.75);
+    width: 40vw;
+    min-width: 100px;
+    height: 15vh;
+    min-height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    /* word-wrap: break-word   Allow long words to be able to break and wrap onto the next line */
+    word-wrap: break-word;
+    /* word-break:break-all Break words at any character: */
+    word-break: break-all;  
+}
+.previous-operand{
+    color: rgba(255,255,255,0.75);
+    font-size: 1.5rem;
+    padding-top:10px;
+    padding-right: 10px;
+}
+.current-operand{
+    color: white;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+/* ------------------------------------------------------BUTTONS -----------------------------------*/
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: auto;
+}
+.button-container{
+    width: 10vw;
+    height: auto;
+    display: inline;
+}
+.individual-button{
+    width: 10vw;
+    min-width: 25px;
+    height: 5vw;
+    min-height: 100px;
+    opacity: 0.8;
+}
+.individual-number-button{
+    width: 10vw;
+    min-width: 25px;
+    height: 5vw;
+    min-height: 100px;
+    background-color:white;
+    opacity: 0.8;
+}
+.individual-button:hover{
+    background-color: #e6e6e6;
+    opacity: .9;
+}
+.individual-number-button:hover{
+    background-color: #e6e6e6;
+    opacity: .9;
+}
